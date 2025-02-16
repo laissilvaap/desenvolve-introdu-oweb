@@ -1,0 +1,214 @@
+color: #F2E7DC;
+color: #666666;
+color: #FF4858;
+
+html{
+background-color: #F2E7DC;
+color: #666666;
+font-size: 18px;
+font-family: 'Arial';
+}
+
+p {
+text-indent: 1em;
+}
+
+h1 {
+   text-align: center;
+   font-size: 1.8rem;
+}
+
+h2 {
+   text-align: center;
+   font-size: 1.4rem;
+}
+
+h3 {
+   text-align:center;
+   font-size: 1.2rem;
+}
+
+.summary {
+   text-align: center;
+}
+
+.main p {
+   line-height: 1.5;
+}
+
+abbr {
+   font-variant: small-caps;
+}
+
+.page-wrapper {
+   width: 80%;
+   max-width: 1280px;
+   margin: auto;
+}
+
+#zen-intro {
+   height: 550px;
+}
+
+.design-archives {
+   display: none;
+}
+
+#zen-intro header {
+background-color: #666666;
+color:  #F2E7DC;
+}
+
+#zen-intro header h1, #zen-intro header h2 {
+   display: inline-block;
+}
+
+#zen-intro header h1 {
+   margin: 0 1em 0;
+}
+
+aside ul {
+   list-style: none;
+}
+
+aside ul li {
+   margin: 1em;
+   text-align: center;
+}
+
+.main footer {
+   margin: 4%
+}
+
+.main footer a {
+   border: solid 2px #FF4858;
+   padding: 0.5em;
+   display: inline-block;
+}
+
+
+.page-wrapper {
+   position: relative;
+}
+
+.explanation {
+   width: 60%;
+   margin-right: 35%;
+   border-right: #FF4858  solid 1px;
+   padding-right: 2%;
+}
+
+#design-selection {
+   position: absolute;
+   top: 460px;
+   left: 62%;
+   padding-left: 1%;
+   padding-right: 1%;
+}
+
+.supporting footer {
+   display: flex;
+   justify-content: space-evenly;
+}
+
+.benefits {
+   display: flex;
+   border-top: #FF4858 solid 1px;
+   border-bottom:  #FF4858 solid 1px;
+}
+
+.benefits p {
+   flex-basis:70%;
+}
+
+.benefits h3 {
+   order: 2;
+   align-self: center;
+   flex-basis: 30%;
+}
+
+.participation {
+   display: flex;
+   flex-wrap: wrap;
+   border-top:  #FF4858 solid 1px;
+   border-bottom:  #FF4858 solid 1px;
+}
+
+.participation h3, .participation p {
+   flex-basis: 50%;
+}
+
+.participation h3 {
+   align-self: center;
+}
+
+a {
+   color: #FF4858;
+   font-weight: 600;
+}
+
+a:hover {
+   color:#F2955E;
+   font-weight: 300;
+}
+
+.main p:first-of-type::first-letter {
+   font-size: 3em;
+   font-family: 'Trebuchet MS';
+   float: left;
+}
+
+.design-selection li {
+   border-top:  #FF4858 solid 1px;
+   padding-top: 5px;
+}
+
+.design-selection li:last-of-type {
+   border-bottom:  #FF4858 solid 1px;
+   padding-bottom: 5px;
+}
+
+@media screen and (max-width: 768px) {
+   #design-selection {
+       position: static;
+       width: 100%;
+   }
+
+   .explanation {
+       border-right: none;
+       width:100%;
+   }
+
+   #zen-intro {
+       height:auto;
+   }
+
+   .participation {
+       flex-direction: column;
+   }
+
+   p {
+       text-indent: 0;
+   }
+}
+
+@media print {
+   html {
+       font-family: 'Times New Roman', Times, serif;    
+    }
+   #zen-intro header {
+       background-color: white;
+       color: #666666
+    }
+
+   #design-selection {
+        position: static;
+        width: 100%;
+    }
+
+.explanation {
+        border-right: none;
+        width:100%;
+   }
+}
+
